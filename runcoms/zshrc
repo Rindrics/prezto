@@ -37,3 +37,5 @@ export GPG_TTY=$TTY
 source ${HOME}/.rvm/scripts/rvm
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
