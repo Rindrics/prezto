@@ -16,3 +16,5 @@ eval "$(starship init zsh)"
 export EDITOR=vi
 eval "$(direnv hook zsh)"
 
+export PATH=$PATH:/Users/ahayashi/go/bin
+
