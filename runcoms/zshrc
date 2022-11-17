@@ -14,3 +14,5 @@ fi
 eval "$(starship init zsh)"
 
 export EDITOR=vi
+eval "$(direnv hook zsh)"
+
