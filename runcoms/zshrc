@@ -11,3 +11,40 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+eval "$(starship init zsh)"
+
+export EDITOR=vi
+eval "$(direnv hook zsh)"
+
+export PATH=$PATH:/Users/ahayashi/go/bin
+
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgpo='kubectl get pods'
+alias kgsvc='kubectl get services'
+alias kgep='kubectl get endpoinds'
+alias kga='kubectl get all'
+alias kaf='kubectl apply -f'
+alias kdf='kubectl delete -f'
+alias kc='kubectl config'
+
+export PATH=/usr/local/Cellar/curl/7.84.0/bin/:$PATH
+export PATH=~/.nodebrew/current/bin:$PATH
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+export GPG_TTY=$TTY
+source ${HOME}/.rvm/scripts/rvm
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
