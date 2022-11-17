@@ -31,3 +31,5 @@ alias kc='kubectl config'
 export PATH=/usr/local/Cellar/curl/7.84.0/bin/:$PATH
 export PATH=~/.nodebrew/current/bin:$PATH
 
+# Load Angular CLI autocompletion.
+source <(ng completion script)
