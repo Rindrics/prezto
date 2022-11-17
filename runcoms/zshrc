@@ -18,3 +18,13 @@ eval "$(direnv hook zsh)"
 
 export PATH=$PATH:/Users/ahayashi/go/bin
 
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgpo='kubectl get pods'
+alias kgsvc='kubectl get services'
+alias kgep='kubectl get endpoinds'
+alias kga='kubectl get all'
+alias kaf='kubectl apply -f'
+alias kdf='kubectl delete -f'
+alias kc='kubectl config'
+
