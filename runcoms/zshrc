@@ -28,3 +28,4 @@ alias kaf='kubectl apply -f'
 alias kdf='kubectl delete -f'
 alias kc='kubectl config'
 
+export PATH=/usr/local/Cellar/curl/7.84.0/bin/:$PATH
